@@ -1,0 +1,24 @@
+server:
+  port: 8000
+
+core:
+  wakanow:
+    username: 15a9efddb90c4a678768b8bf78707afa
+    password: _0GZIjuqlC
+  service:
+    db:
+      password:
+      username: sa
+      driver-class-name: org.h2.Driver
+      url: jdbc:h2:mem:test;MODE=PostgreSQL;DB_CLOSE_DELAY=-1
+
+spring:
+  thymeleaf:
+    cache: false
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+  jpa:
+    show-sql: true
+

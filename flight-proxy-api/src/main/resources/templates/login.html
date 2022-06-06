@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        *, *:before, *:after {
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+        }
+        .img{
+            overflow: hidden;
+            z-index: 2;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 260px;
+            height: 100%;
+            padding-top: 360px;
+            background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/sections-3.jpg');
+            background-size: cover;
+        }
+        .tip {
+          font-size: 20px;
+          margin: 40px auto 50px;
+          text-align: center;
+        }
+
+        body {
+          font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+          background: #ededed;
+        }
+
+        input, button {
+          border: none;
+          outline: none;
+          background: none;
+          font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+        }
+        .cont {
+            overflow: hidden;
+            position: relative;
+            width: 900px;
+            height: 900px;
+            margin: 0 auto 100px;
+            background: #fff;
+        }
+        .form {
+            position: relative;
+            width: 640px;
+            height: 100%;
+            padding: 50px 30px 0;
+        }
+        .sub-cont {
+            overflow: hidden;
+            position: absolute;
+            left: 640px;
+            top: 0;
+            width: 900px;
+            height: 100%;
+            padding-left: 260px;
+        }
+        h2 {
+            width: 100%;
+            font-size: 26px;
+            text-align: center;
+        }
+        input {
+            display: block;
+            width: 100%;
+            margin-top: 5px;
+            padding-bottom: 5px;
+            font-size: 16px;
+            border-bottom: 1px solid rgba(0,0,0,0.4);
+            text-align: center;
+        }
+        .forgot-pass {
+            margin-top: 15px;
+            text-align: center;
+            font-size: 12px;
+            color: #cfcfcf;
+        }
+        span {
+            font-size: 12px;
+            color: #cfcfcf;
+            text-transform: uppercase;
+        }
+        button {
+          display: block;
+          margin: 0 auto;
+          width: 260px;
+          height: 36px;
+          border-radius: 30px;
+          color: #fff;
+          font-size: 15px;
+          cursor: pointer;
+        }
+
+        label {
+          display: block;
+          width: $inputW;
+          margin: 25px auto 0;
+          text-align: center;
+
+          span {
+            font-size: 12px;
+            color: #cfcfcf;
+            text-transform: uppercase;
+          }
+        }
+        .submit {
+          margin-top: 40px;
+          margin-bottom: 20px;
+          background: #FF0000;
+          text-transform: uppercase;
+        }
+
+        .icon-link {
+          position: absolute;
+          left: 5px;
+          bottom: 5px;
+          width: 32px;
+
+          img {
+            width: 100%;
+            vertical-align: top;
+          }
+        }
+
+    </style>
+</head>
+<body>
+<p class="tip"></p>
+<div class="cont">
+    <div class="sub-cont">
+        <div class="img">
+
+        </div>
+
+    </div>
+    <div class="form sign-in">
+        <h2>Zenith Travels</h2>
+        <label>
+            <span>Email</span>
+            <input type="email" />
+        </label>
+        <label>
+            <span>Password</span>
+            <input type="password" />
+        </label>
+        <p class="forgot-pass">Forgot password?</p>
+        <button type="button" class="submit">Sign In</button>
+    </div>
+
+</div>
+</body>
+</html>
